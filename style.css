@@ -1,0 +1,416 @@
+body{
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+span{
+    color:hsl(0deg 83.93% 43.92%);
+}
+.navbar{
+    background-color:rgb(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    z-index: 1;
+    box-shadow:10px 10px 5px lightgray;
+}
+.logo{
+    margin-left: 10px;
+}
+.options{
+    margin-left: 10px;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li:hover a{
+    text-decoration: underline;
+    text-decoration-color:hsl(0deg 83.93% 43.92%);
+}
+.options li{
+    padding: 10px 0;
+}
+.sectionOne{
+    background-color: eee;
+    text-align: center;
+}
+.sectionOne img{
+    width: 100%;
+}
+.sectionOne .image{
+    margin-top: 100px;
+}
+.sectionOne button{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 100vh;
+    color: white;
+}
+.navbar h1, .footer .partone h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+.navbar li{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 17px;
+}
+.sectionOne .text h1{
+        font-family: "Amatic SC", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 65px;
+}
+.sectionOne .text p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color:rgb(79, 79, 90) ;
+}
+.sectionTwo h1{
+        font-family: "Amatic SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+}
+.sectionTwo p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color:rgb(79, 79, 90) ;
+}
+.sectionTwo h2{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 19px;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+}
+button{
+    background-color:hsl(0deg 83.93% 43.92%);
+    border: none;
+}
+.sectionThree .header h1{
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+.sectionThree .header p{
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 16px;
+color:rgb(79, 79, 90) ;
+}
+.sectionFour h1{
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+.sectionFour p{
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 16px;
+color:rgb(79, 79, 90) ;
+}
+.sectionFour h3{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    color: rgb(125, 125, 125);
+}
+.footer p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+.footer h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 19px;
+}
+.sectionTwo{
+    text-align: center;
+    padding-top: 50px;
+    background-color: white;
+    padding-bottom: 50px;
+}
+.sectionTwo img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.person:hover{
+    transform: scale(0.9);
+}
+.person{
+    width: 100%;
+    transition: transform 0.5s;
+    background-color: white;
+    box-shadow:10px 10px 5px lightgray;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.layer{
+    position: absolute;
+    background-color: #37373f66;
+    right: 0;
+    top: 20px;
+    opacity: 0.5;
+    display: flex;
+    flex-direction: column;
+    transform: translate(100%);
+    transition: transform 0.5s;
+}
+.layer i{
+    font-size: 30px;
+    padding: 5px;
+    opacity: 0.5 ;
+}
+i:hover{
+    opacity: 1;
+}
+.person:hover .layer{
+    transform: translate(0%);
+}
+
+.sectionThree{
+    margin-top: 60px;
+    text-align: center;
+    background-color: eee;
+    padding-top: 50px;
+}
+.meal{
+position: relative;
+overflow: hidden;
+}
+.meal:hover .content{
+    opacity: 1;
+    transform: translate(0);
+    transition: transform 0.5s;
+    width: 100%;
+}
+.meal:hover img{
+    transform: scale(1.2);
+}
+.content{
+background-color: #00000096;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+color: white;
+text-align: center;
+padding-top: 100px;
+opacity: 0;
+transition: opacity 0.5s;
+transform: translate(100%);
+}
+.meal img{
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.sectionThree .items .meal{
+    margin: 20px;
+}
+.sectionFour i{
+    color:hsl(0deg 83.93% 43.92%);
+}
+.sectionFour{
+    padding-top: 60px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.sectionFour img{
+    width: 90%;
+    margin-bottom: 20px;
+}
+.detail{
+    background-color: eee;
+    padding-top:1px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.formu{
+    background-color: eee;
+    padding-top: 50px;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow:10px 10px 5px lightgray;}
+
+.formu input{
+    width: 100%;
+    padding: 20px;
+}
+.formu form button{
+    border-radius: 100vh;
+    padding: 10px;
+    color: white;
+}
+input:hover {
+    border-color: hsl(0deg 83.93% 43.92%);
+}
+
+.footer{
+    background-color: #212529; 
+    width: 100%;
+    overflow: auto;
+    color: white;
+}
+.footercontain{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.footer .partone img{
+    width: 50px;
+    margin-right: 20px;
+}
+.partone{
+    display: flex;
+    align-items: center;
+
+}
+.footer i{
+    margin: 20px;
+    font-size: 30px;
+}
+.footer input{
+    width: 100%;
+    padding: 15px;
+}
+.footer button{
+    width: 100%;
+    margin-top: 10px;
+    color: white;
+}
+/* RESPONSIVE*/
+@media screen and (min-width:920px) {
+    .navbar{
+        background-color: fff;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 1;
+    }
+    a{
+        color: black;
+    }
+    .options ul{
+        display: flex;
+        gap: 10px;
+    }
+    .sectionOne{
+        display: flex;
+        height: 100vh;
+    }
+    .sectionOne .text{
+        position: relative;
+        top: 200px;
+        left: 250px;
+        width: 500px;
+    }
+    .sectionOne .img{
+        position: relative;
+        top: 100px;
+    }
+    .sectionOne button{
+        border-radius:  0px 100vh 100vh;
+    }
+    .persons{
+        display: flex;
+        justify-content: space-around;
+    }
+    .person{
+        width: 25%;
+    }
+    
+.sectionThree .items .meal{
+    width: 30%;
+}
+.sectionThree .items{
+    display: flex;
+    flex-direction:column ;
+    flex-wrap: wrap;
+    height: 1400px;
+}
+.formu{
+    background-color: eee;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    width: 80%;
+    margin-left: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formu input{
+    width: 30%;
+    padding: 20px;
+}
+
+.sectionFour .details1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.sectionFour .details1 .detail{
+    width: 45%;
+    background-color: eee;
+}
+.sectionFour .details2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sectionFour .details2 .detail{
+    width: 45%;
+    background-color: eee;
+}
+.footer .footercontain{
+    display: flex;
+}
+.one{
+    padding: 30px;
+    width: 25%;
+}
+.two{
+    padding: 30px;
+    width: 40%;
+}
+.three{
+    padding: 30px;
+    width:35% ;
+}
+}
